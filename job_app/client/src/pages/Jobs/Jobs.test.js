@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from './App';
+import Jobs from './Jobs';
 
 it('renders correctly', () => {
-  const tree = renderer.create(<App />).toJSON();
+  const tree = renderer.create(<Jobs />).toJSON();
   expect(tree).toMatchSnapshot();
 });

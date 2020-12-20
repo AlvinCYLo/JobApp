@@ -22,6 +22,8 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ContactsIcon from '@material-ui/icons/Contacts';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 import WorkIcon from '@material-ui/icons/Work';
+import EmailIcon from '@material-ui/icons/Email';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 import Applied from './Applied/Applied';
 import Jobs from './Jobs/Jobs';
@@ -127,6 +129,12 @@ const App = () => {
           </div>
           <Divider />
           <List>
+            <ListItem button key="Info">
+              <ListItemIcon>
+                <ContactsIcon />
+              </ListItemIcon>
+              <ListItemText primary="Info" />
+            </ListItem>
             <ListItem button key="Jobs">
               <ListItemIcon>
                 <WorkIcon />
@@ -139,11 +147,17 @@ const App = () => {
               </ListItemIcon>
               <ListItemText primary="Applied" />
             </ListItem>
-            <ListItem button key="Info">
+            <ListItem button key="ColdEmail">
               <ListItemIcon>
-                <ContactsIcon />
+                <EmailIcon />
               </ListItemIcon>
-              <ListItemText primary="Info" />
+              <ListItemText primary="Cold Email" />
+            </ListItem>
+            <ListItem button key="Networking">
+              <ListItemIcon>
+                <LinkedInIcon />
+              </ListItemIcon>
+              <ListItemText primary="Networking" />
             </ListItem>
           </List>
         </Drawer>

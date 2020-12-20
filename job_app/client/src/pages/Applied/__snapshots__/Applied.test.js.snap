@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Applied page correctly 1`] = `
+<div>
+  APPLIED
+</div>
+`;
